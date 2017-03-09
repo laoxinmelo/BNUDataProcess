@@ -17,4 +17,12 @@ public interface DataIntegrateTool {
      */
     List<DataFile> ReadFiles(File root) throws Exception;
 
+    /**
+     * 将所有结果进行整合并保存至save/temp文件夹中
+     *
+     * @param dataFile
+     * @throws Exception
+     */
+    void integrateAndSave(DataFile dataFile) throws Exception;
+
 }
