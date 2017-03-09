@@ -1,0 +1,39 @@
+FORMAT-1
+2015-04-19 00:01:00 0
+BLS450
+2 13 0
+
+Software Version: BLSRun 1.42
+Data transferred from SPU on 2015-06-17 12:01:15
+Diagnosis Data
+Time # Time #  # T1 # 1
+Average X # <X> #  # S # 1
+Std. Deviation X # sigX #  # S # 1
+Minimum X # Xmin #  # S # 1
+Maximum X # Xmax #  # S # 1
+Alignment Indicator Z # Zalign #  # S # 1
+Number of valid datapoints # NumValid #  # S # 1
+Number of datapoints # NumTotal #  # S # 1
+Startup-Count # Startup-Count #  # S # 1
+Measurement-Count # Measurement-Count #  # S # 1
+Data-Count # Data-Count #  # S # 1
+SPU+12V # SPU+12V # V # S # 1
+SPU CPU Temperature # SPU-CPU-Temp # deg C # S # 1
+Error Code # ALIGN LEVEL NUL NUL NUL NUL NUL NUL WSP-ERR BATT ALG NOSIGNAL NUL NUL NUL NUL #  # E # EEIIIIIIIEEEIIII
+
+
+2015-04-19 00:01:00	0.0	0.0	0	0	26	0	0	992	124	1839	11.9	28.0	2049
+2015-04-19 00:02:00	0.0	0.0	0	0	26	0	0	992	124	1840	11.9	28.0	2049
+2015-04-19 00:03:00	0.0	0.0	0	0	26	0	0	992	124	1841	11.9	28.0	2049
+2015-04-19 00:04:00	0.0	0.0	0	0	26	0	0	992	124	1842	11.9	28.0	2049
+2015-04-19 00:05:00	0.0	0.0	0	0	26	0	0	992	124	1843	11.9	28.0	2049
+2015-04-19 00:06:00	0.0	0.0	0	0	26	0	0	992	124	1844	11.9	28.0	2049
+2015-04-19 00:07:00	0.0	0.0	0	0	26	0	0	992	124	1845	11.9	27.0	2049
+2015-04-19 00:08:00	0.0	0.0	0	0	26	0	0	992	124	1846	11.9	27.0	2049
+2015-04-19 00:09:00	0.0	0.0	0	0	26	0	0	992	124	1847	11.9	27.0	2049
+2015-04-19 00:10:00	0.0	0.0	0	0	26	0	0	992	124	1848	11.9	27.0	2049
+2015-04-19 00:11:00	0.0	0.0	0	0	26	0	0	992	124	1849	11.9	27.0	2049
+2015-04-19 00:12:00	9.5	0.7	9	10	26	2	2	992	124	1850	11.9	28.0	1
+2015-04-19 00:13:00	9.5	0.6	9	10	26	4	4	992	124	1851	11.9	27.0	1
+2015-04-19 00:14:00	9.0	0.0	9	9	26	2	2	992	124	1852	11.9	27.0	1
+2015-04-19 00:15:00	0.0	0.0	0	0	26	0	0	992	124	1853	11.9	27.0	2049

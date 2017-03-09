@@ -1,0 +1,32 @@
+FORMAT-1
+2015-05-09 07:10:00 0
+BLS450
+2 7 0
+
+Software Version: BLSRun 1.42
+Data transferred from SPU on 2015-06-17 12:01:15
+Main Data
+Time # Time #  # T1 # 1
+Normalized Std.Dev. # Norm. StdDev #  # S # 1
+Cn^2 (880 nm) # Cn^2 (880 nm) # m^-2/3 # S # 1
+Cn^2 Extinction and Outer Scale Correction Factor # Cn^2 EO-Corr-Factor #  # S # 1
+Cn^2 Saturation Correction Factor  # Cn^2 Saturation-Corr-Factor #  # S # 1
+CT^2 # CT^2 # K^2 m^-2/3 # S # 1
+Heat Flux (Free Convection) # H_FC # W/m^2 # S # 1
+Error Code # ALIGN LEVEL NUL NUL NUL NUL NUL NUL WSP-ERR BATT ALG NOSIGNAL NUL NUL NUL NUL #  # E # EEIIIIIIIEEEIIII
+
+
+2015-05-09 07:10:00	0.267	7.4945e-14	*	1.1979	0.15136	212.7	2
+2015-05-09 07:11:00	0.269	7.5960e-14	*	1.2006	0.15341	214.9	2
+2015-05-09 07:12:00	0.437	2.8863e-13	*	1.8195	0.58292	584.7	2
+2015-05-09 07:13:00	0.729	*	*	*	*	*	2
+2015-05-09 07:14:00	1.049	*	*	*	*	*	2
+2015-05-09 07:15:00	0.487	4.6017e-13	*	2.3838	0.92937	829.7	2
+2015-05-09 07:16:00	0.440	2.9545e-13	*	1.8401	0.59669	595.1	2
+2015-05-09 07:17:00	0.553	*	*	*	*	*	2
+2015-05-09 07:18:00	0.609	*	*	*	*	*	2
+2015-05-09 07:19:00	0.528	8.4984e-13	*	3.8090	1.71637	1314.4	2
+2015-05-09 07:20:00	0.818	*	*	*	*	*	2
+2015-05-09 07:21:00	0.744	*	*	*	*	*	1
+2015-05-09 07:22:00	1.609	*	*	*	*	*	2
+2015-05-09 07:23:00	0.343	1.3828e-13	*	1.3730	0.27926	336.7	2

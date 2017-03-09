@@ -1,0 +1,23 @@
+FORMAT-1
+2015-05-01 01:12:00 0
+BLS450
+2 7 0
+
+Software Version: BLSRun 1.42
+Data transferred from SPU on 2015-06-17 12:01:15
+Main Data
+Time # Time #  # T1 # 1
+Normalized Std.Dev. # Norm. StdDev #  # S # 1
+Cn^2 (880 nm) # Cn^2 (880 nm) # m^-2/3 # S # 1
+Cn^2 Extinction and Outer Scale Correction Factor # Cn^2 EO-Corr-Factor #  # S # 1
+Cn^2 Saturation Correction Factor  # Cn^2 Saturation-Corr-Factor #  # S # 1
+CT^2 # CT^2 # K^2 m^-2/3 # S # 1
+Heat Flux (Free Convection) # H_FC # W/m^2 # S # 1
+Error Code # ALIGN LEVEL NUL NUL NUL NUL NUL NUL WSP-ERR BATT ALG NOSIGNAL NUL NUL NUL NUL #  # E # EEIIIIIIIEEEIIII
+
+
+2015-05-01 01:12:00	*	*	*	*	*	*	2049
+2015-05-01 01:13:00	*	*	*	*	*	*	2049
+2015-05-01 01:14:00	*	*	*	*	*	*	2049
+2015-05-01 01:15:00	*	*	*	*	*	*	2049
+2015-05-01 01:16:00	*	*	*	*	*	*	2049

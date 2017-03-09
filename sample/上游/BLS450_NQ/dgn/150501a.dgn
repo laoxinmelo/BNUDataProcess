@@ -1,0 +1,30 @@
+FORMAT-1
+2015-05-01 01:13:00 0
+BLS450
+2 13 0
+
+Software Version: BLSRun 1.42
+Data transferred from SPU on 2015-06-17 12:01:15
+Diagnosis Data
+Time # Time #  # T1 # 1
+Average X # <X> #  # S # 1
+Std. Deviation X # sigX #  # S # 1
+Minimum X # Xmin #  # S # 1
+Maximum X # Xmax #  # S # 1
+Alignment Indicator Z # Zalign #  # S # 1
+Number of valid datapoints # NumValid #  # S # 1
+Number of datapoints # NumTotal #  # S # 1
+Startup-Count # Startup-Count #  # S # 1
+Measurement-Count # Measurement-Count #  # S # 1
+Data-Count # Data-Count #  # S # 1
+SPU+12V # SPU+12V # V # S # 1
+SPU CPU Temperature # SPU-CPU-Temp # deg C # S # 1
+Error Code # ALIGN LEVEL NUL NUL NUL NUL NUL NUL WSP-ERR BATT ALG NOSIGNAL NUL NUL NUL NUL #  # E # EEIIIIIIIEEEIIII
+
+
+2015-05-01 01:13:00	0.0	0.0	0	0	26	0	0	992	127	16442	11.9	30.0	2049
+2015-05-01 01:14:00	0.0	0.0	0	0	26	0	0	992	127	16443	11.9	31.0	2049
+2015-05-01 01:15:00	0.0	0.0	0	0	26	0	0	992	127	16444	11.9	29.0	2049
+2015-05-01 01:16:00	0.0	0.0	0	0	26	0	0	992	127	16445	11.9	31.0	2049
+2015-05-01 01:17:00	7.0	0.0	7	7	26	2	2	992	127	16446	11.9	30.0	1
+2015-05-01 01:18:00	7.2	0.6	6	8	26	177	178	992	127	16447	11.9	31.0	1
