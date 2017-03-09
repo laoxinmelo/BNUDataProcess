@@ -16,7 +16,7 @@ public class DataFile {
     private String mark;
 
     //所有与该后缀名所对应的文件列表
-    private List<File> fList;
+    private File[] fileArray;
 
     public String getMark() {
         return mark;
@@ -26,16 +26,16 @@ public class DataFile {
         this.mark = mark;
     }
 
-    public List<File> getfList() {
-        return fList;
+    public File[] getFileArray() {
+        return fileArray;
     }
 
-    public void setfList(List<File> fList) {
-        this.fList = fList;
+    public void setFileArray(File[] fileArray) {
+        this.fileArray = fileArray;
     }
 
-    public DataFile(String mark, List<File> fList) {
+    public DataFile(String mark, File[] fileArray) {
         this.mark = mark;
-        this.fList = fList;
+        this.fileArray = fileArray;
     }
 }

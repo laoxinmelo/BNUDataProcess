@@ -4,6 +4,7 @@ import master.dataobject.DataFile;
 import master.operation.integrate.DataIntegrateTool;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ public class DataIntegrateToolImpl implements DataIntegrateTool {
      * 读取文件并保存
      * @param root
      */
-    public void ReadFiles(File root) throws Exception {
+    public List<DataFile> ReadFiles(File root) throws Exception {
         if(root == null) {
             throw new Exception("The file is null...");
         }
@@ -25,9 +26,14 @@ public class DataIntegrateToolImpl implements DataIntegrateTool {
         File[] files = root.listFiles();
         String streamName = root.getName();
 
+        List<DataFile> dataFileList = new ArrayList<DataFile>();
+
         for(File file : files) {
-            getDataFile(streamName,file);
+            dataFileList.addAll(getDataFile(streamName,file));
         }
+
+        System.out.println(dataFileList.size());
+        return dataFileList;
     }
 
     /**
@@ -42,12 +48,16 @@ public class DataIntegrateToolImpl implements DataIntegrateTool {
             throw new Exception("The file is null...");
         }
 
+        List<DataFile> dataFileList = new ArrayList<DataFile>();
         for(File subFile:file.listFiles()) {
             String mark = streamName + markIndex + file.getName() + markIndex + subFile.getName();
-            System.out.println(mark);
+            File[] markFileArray = subFile.listFiles();
+
+            DataFile dataFile = new DataFile(mark,markFileArray);
+            dataFileList.add(dataFile);
         }
 
-        return null;
+        return dataFileList;
     }
 
     public static void main(String[] args) throws Exception{

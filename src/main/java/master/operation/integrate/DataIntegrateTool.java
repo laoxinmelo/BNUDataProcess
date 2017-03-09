@@ -15,6 +15,6 @@ public interface DataIntegrateTool {
      * 读取文件并保存
      * @param root
      */
-    void ReadFiles(File root) throws Exception;
+    List<DataFile> ReadFiles(File root) throws Exception;
 
 }
