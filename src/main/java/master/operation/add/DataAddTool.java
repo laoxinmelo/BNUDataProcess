@@ -14,5 +14,5 @@ public interface DataAddTool {
      *
      * @param f
      */
-    void addData(File f) throws Exception;
+    void addData(String mark) throws Exception;
 }

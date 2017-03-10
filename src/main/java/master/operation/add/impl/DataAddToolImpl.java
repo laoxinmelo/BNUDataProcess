@@ -22,32 +22,36 @@ public class DataAddToolImpl implements DataAddTool {
 
     private static final String resultSavePath = "./save/result/";
 
+    private static final String tempSavePath = "./save/temp/";
+
+    private static final String formatIndex = ".txt";
+
     private static final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd HH:mm"); //所设置时间格式
 
     /**
      * 对数据进行插补
      *
-     * @param file
+     * @param mark
      * @throws Exception
      */
-    public void addData(File file) throws Exception {
+    public void addData(String mark) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(tempSavePath + mark + formatIndex))));
         String temp = br.readLine();
         String nextTemp = br.readLine();
 
-        BufferedWriter bw = new BufferedWriter(new FileWriter(resultSavePath + file.getName()));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(resultSavePath + mark + formatIndex));
 
         while(nextTemp != null) {
 
             DataTime dataTime = transferStr(temp);
             DataTime nextDataTime = transferStr(nextTemp);
 
-            System.out.println(temp);
+//            System.out.println(temp);
             bw.write(temp + "\r\n");
             List<String> addDateList = addDataBetweenTwoDate(dataTime,nextDataTime);
             for(String addDate:addDateList) {
-                System.out.println(addDate);
+//                System.out.println(addDate);
                 bw.write(addDate + "\r\n");
             }
 
@@ -55,7 +59,7 @@ public class DataAddToolImpl implements DataAddTool {
             nextTemp = br.readLine();
         }
 
-        System.out.println(temp);
+//        System.out.println(temp);
         bw.write(temp + "\r\n");
 
         bw.flush();  bw.close();
@@ -109,13 +113,13 @@ public class DataAddToolImpl implements DataAddTool {
         }
     }
 
-    public static void main(String[] args) throws Exception{
-
-        DataAddTool dataAddTool = new DataAddToolImpl();
-
-        File file = new File("E:\\Project\\JavaProject\\BNUDataProcess\\save\\temp\\上游_BLS450_NQ_mnd.txt");
-
-        dataAddTool.addData(file);
-
-    }
+//    public static void main(String[] args) throws Exception{
+//
+//        DataAddTool dataAddTool = new DataAddToolImpl();
+//
+//        File file = new File("E:\\Project\\JavaProject\\BNUDataProcess\\save\\temp\\上游_BLS450_NQ_mnd.txt");
+//
+//        dataAddTool.addData(file);
+//
+//    }
 }

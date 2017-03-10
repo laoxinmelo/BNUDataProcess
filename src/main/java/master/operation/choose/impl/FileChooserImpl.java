@@ -1,4 +1,6 @@
-package master.operation.basic.impl;
+package master.operation.choose.impl;
+
+import master.operation.choose.FileChooser;
 
 import javax.swing.*;
 import java.io.File;
@@ -6,7 +8,7 @@ import java.io.File;
 /**
  * Created by Administrator on 2017/3/10.
  */
-public class FileChooserImpl {
+public class FileChooserImpl implements FileChooser {
 
     /**
      * 选取文件夹
@@ -25,7 +27,7 @@ public class FileChooserImpl {
     }
 
 
-    public static void main(String[] args) {
-        new FileChooserImpl().chooseFile();
-    }
+//    public static void main(String[] args) {
+//        new FileChooserImpl().chooseFile();
+//    }
 }
