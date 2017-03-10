@@ -11,5 +11,5 @@ public interface FileChooser {
      * 选取文件夹
      * @return
      */
-    File chooseFile();
+    File[] chooseFile();
 }
