@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/3/10.
  */
-public class AddAndIntegrate {
+public class IntegrateAndInsert {
 
     private static final FileChooser fileChooser = new FileChooserImpl(); //文件选择器
 
