@@ -2,11 +2,10 @@ package master.dataobject;
 
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
+ * 用于数据整合
  * 对于某种文件的类型进行了定义
  * 同时构造了该类型文件的对应列表
  */

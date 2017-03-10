@@ -3,6 +3,7 @@ package master.dataobject;
 import java.util.Date;
 
 /**
+ * 用于数据插补
  * 对应了某一条record的时间
  * 及其该record中各个属性维度的数据
  */

@@ -15,7 +15,7 @@ public interface DataIntegrateTool {
      * 读取文件并保存
      * @param root
      */
-    List<DataFile> ReadFiles(File root) throws Exception;
+    List<DataFile> readFiles(File root) throws Exception;
 
     /**
      * 将所有结果进行整合并保存至save/temp文件夹中
