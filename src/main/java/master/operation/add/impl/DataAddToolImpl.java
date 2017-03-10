@@ -86,8 +86,8 @@ public class DataAddToolImpl implements DataAddTool {
             String addDateFormat = format.format(tempDate);
             addDateList.add(addDateFormat);
         }
-
         return addDateList;
+
     }
 
     /**

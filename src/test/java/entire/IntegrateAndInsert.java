@@ -28,8 +28,9 @@ public class IntegrateAndInsert {
 
         File[] files = fileChooser.chooseFile();
 
+        System.out.println("######################################");
         System.out.println("Start!");
-        System.out.println("______________________________");
+        System.out.println("######################################");
 
         for(File file:files) {
 
@@ -39,15 +40,20 @@ public class IntegrateAndInsert {
                 dataIntegrateTool.integrateAndSave(dataFile); //将文件进行整合
                 System.out.println("integrate data : " + dataFile.getMark() + "...");
 
-                dataAddTool.addData(dataFile.getMark());
+                dataAddTool.addData(dataFile.getMark());  //插补
                 System.out.println("insert data : " + dataFile.getMark() + "...");
+
+                System.out.println("______________________________");
+
 
             }
 
         }
 
-        System.out.println("______________________________");
+        System.out.println("######################################");
         System.out.println("End!");
+        System.out.println("######################################");
+
 
     }
 
