@@ -20,13 +20,15 @@ public class DataAddToolImpl implements DataAddTool {
 
     private static final int basicYear = 1900;
 
+    private static final int basicMonth = 1;
+
     private static final String resultSavePath = "./save/result/";
 
     private static final String tempSavePath = "./save/temp/";
 
     private static final String formatIndex = ".txt";
 
-    private static final SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd HH:mm"); //所设置时间格式
+    private static final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm"); //所设置时间格式
 
     /**
      * 对数据进行插补
@@ -77,6 +79,10 @@ public class DataAddToolImpl implements DataAddTool {
         Date date = dataTime.getDate();
         Date nextDate = nextDataTime.getDate();
 
+//        if(date.equals(new Date(2016-1900,1-1,1,1,33))) {
+//
+//            System.out.println(date);
+//        }
         List<String> addDateList = new ArrayList<String>();
         int count = new Long((nextDate.getTime() - date.getTime())/(60*1000)).intValue();
         for(int i=1;i<count;i++) {
@@ -104,7 +110,7 @@ public class DataAddToolImpl implements DataAddTool {
 
         String[] dateArray = dateStr.replaceAll("[^0-9]",dateIndex).split(dateIndex);
         if(dateArray.length >= 5) {
-            DataTime dataTime = new DataTime(Integer.valueOf(dateArray[0])-basicYear,Integer.valueOf(dateArray[1]),Integer.valueOf(dateArray[2]),Integer.valueOf(dateArray[3]),
+            DataTime dataTime = new DataTime(Integer.valueOf(dateArray[0])-basicYear,Integer.valueOf(dateArray[1])-basicMonth,Integer.valueOf(dateArray[2]),Integer.valueOf(dateArray[3]),
                     Integer.valueOf(dateArray[4]),recordStr);
             return dataTime;
 

@@ -12,7 +12,7 @@ public interface DataAddTool {
     /**
      * 对数据进行插补
      *
-     * @param f
+     * @param mark
      */
     void addData(String mark) throws Exception;
 }
